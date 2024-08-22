@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.app {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #6c63ff;
+    height: fit-content;
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-list li {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li i {
+    margin-right: 10px;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-profile img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.menu-list li i {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.search-bar i {
+    margin-right: 5px;
+    color: #888;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.notification-icon {
+    font-size: 20px;
+    color: #888;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.quicklinks-heading {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    color: #344054;
+    margin-bottom: 9px;
+}
+
+.notification-icon:hover,
+.search-bar i:hover {
+    color: #333;
+}
+
+
+/* Combined Container for Overview and Quick Links */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.quicklinks {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    padding: 9px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.links div {
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links div i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overview-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-report {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overview-filters {
+    margin: 20px 0;
+}
+
+.overview-filters button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.filter-active {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.chart img {
+    width: 100%;
+}
+
+/* Trading Accounts and Open Trades */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    gap: 20px;
+}
+
+.trading-accounts,
+.open-trades {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account,
+.trade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+.heading {
+    padding-bottom: 9px;
+}
+
+.account-para {
+    padding-bottom: 9px;
+}
+
+.account-para-amount {
+    padding-bottom: 9px;
+    font-size: 20px;
+}
+
+.span-element {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 5px;
+}
+
+.positive {
+    color: green;
+    font-size: 20px;
+}
+
+.negative {
+    color: red;
+    font-size: 20px;
+}
+
+.neutral {
+    color: gray;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops (up to 1024px) */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .header input {
+        width: 150px;
+    }
+
+    .right-panel {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* For mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .left-container,
+    .right-panel {
+        width: 100%;
+    }
+
+    .overview-section,
+    .trading-accounts,
+    .open-trades {
+        margin-bottom: 20px;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* For very small devices (up to 480px) */
+@media (max-width: 480px) {
+    .header input {
+        margin-top: 15px;
+    }
+
+    .overview-section,
+    .trading-accounts,
+    .open-trades {
+        padding: 15px;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+    }
+}

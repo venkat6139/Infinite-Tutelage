@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src='https://raw.githubusercontent.com/Maheshwarm-Shivani/Infinite-Tutelage-Assignment/f54a1dbbdbc63b256dd78b49795328d8995ccda9/src/assets/react.svg' alt='logo' />
+            </div>
+            <ul class="nav-list">
+                <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                <li><i class="fas fa-user"></i> CRM</li>
+                <li><i class="fas fa-briefcase"></i> MAM</li>
+                <li><i class="fas fa-chart-line"></i> PAMM</li>
+                <li><i class="fas fa-exchange-alt"></i> Trade</li>
+                <li><i class="fas fa-wallet"></i> Wallet</li>
+                <li><i class="fas fa-university"></i> Accounts</li>
+                <li><i class="fas fa-history"></i> History</li>
+            </ul>
+            <ul class="menu-list">
+                <li><i class="fas fa-bell"></i> Notifications</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li><i class="fas fa-question-circle"></i> Help & Support</li>
+                <li><i class="fas fa-sign-out-alt"></i> Log Out</li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div>
+                        <img src="https://res.cloudinary.com/di9qg5ka6/image/upload/v1723970366/Frame_19_dajcfh.svg" alt="frame" />
+                    </div>
+                    <div>
+                        <p>Shyam Shakur</p>
+                        <small>shyam@shakur.com</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header with Search Bar -->
+            <header class="header">
+                <h2>Dashboard</h2>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <i class="fas fa-bell notification-icon"></i>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <!-- Combined Container for Quick Links and Overview -->
+                <div class="left-container">
+                    <!-- Quick Links -->
+                    <div class="quicklinks">
+                        <h1 class="quicklinks-heading">Quicks Links</h1>
+                        <div class="links">
+                            <div><i class="fas fa-hand-holding-usd"></i> Deposit</div>
+                            <div><i class="fas fa-money-bill-wave"></i> Withdraw</div>
+                            <div><i class="fas fa-cogs"></i> Settings</div>
+                            <div><i class="fas fa-user-check"></i> Verification</div>
+                            <div><i class="fas fa-gift"></i> Bonuses</div>
+                            <div><i class="fas fa-random"></i> MTS</div>
+                            <div><i class="fas fa-exchange-alt"></i> Transfer</div>
+                            <div><i class="fas fa-history"></i> History</div>
+                            <div><i class="fas fa-user-friends"></i> Partner</div>
+                            <div><i class="fas fa-chart-pie"></i> Analytics</div>
+                        </div>
+                    </div>
+
+                    <!-- Overview Section -->
+                    <section class="overview-section">
+                        <div class="overview-header">
+                            <h2>Overview</h2>
+                            <button class="download-report"><i class="fas fa-download"></i> Download Report</button>
+                        </div>
+                        <div class="overview-filters">
+                            <button>Monthly</button>
+                            <button>Yearly</button>
+                        </div>
+                        <div class="chart">
+                            <img src="https://i.ibb.co/7t8ksTV/inf.jpg" alt="Chart Placeholder">
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Trading Accounts and Open Trades -->
+                <div class="right-panel">
+                    <!-- Trading Accounts -->
+                    <section class="trading-accounts">
+                        <h3 class="heading">Trading Accounts</h3>
+                        <div class="account">
+                            <p class="account-para">Master Account</p>
+                            <p class="account-para"><span class="span-element">CTicker</span> #123456</p>
+                            <p class="balance account-para-amount">$0.00 USD</p>
+                        </div>
+                        <div class="account">
+                            <p class="account-para">Master Account</p>
+                            <p class="account-para"><span class="span-element">CTicker</span> #789012</p>
+                            <p class="balance account-para-amount">$0.00 USD</p>
+                        </div>
+                    </section>
+
+                    <!-- Open Trades -->
+                    <section class="open-trades">
+                        <h3 class="heading">Open Trades</h3>
+                        <div class="trade">
+                            <p class="account-para">EUR/USD</p>
+                            <p class="positive">+56.00 USD</p>
+                        </div>
+                        <div class="trade">
+                            <p class="account-para">USD/JPY</p>
+                            <p class="negative">-0.09 USD</p>
+                        </div>
+                        <div class="trade">
+                            <p class="account-para">GBP/USD</p>
+                            <p class="negative">-0.01 USD</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
